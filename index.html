@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</head>
+<body>
+    <div class="verification-container">
+        <div id="message-box">
+            <!-- Lottie Animation -->
+            <lottie-player 
+                src="https://lottie.host/a56fbf80-715d-433b-8211-a05d41eb86cf/HpyK6Ulg7M.json" 
+                background="#ffffff" 
+                speed="1" 
+                style="width: 200px; height: 200px; margin: auto;" 
+                loop 
+                autoplay>
+            </lottie-player>
+            <p id="message">
+                Verifying if you're a subscriber...
+            </p>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="hidden">
+        <!-- dotLottie Animation -->
+        <dotlottie-player 
+            src="https://lottie.host/41fddb0a-3ea7-4f27-91d2-b8e0681bb614/3Me48tVhSL.lottie" 
+            background="transparent" 
+            speed="1" 
+            style="width: 150px; height: 150px; margin: auto;" 
+            loop 
+            autoplay>
+        </dotlottie-player>
+        <p>Verification failed. You're not a subscriber of <b>TBS GAMER</b>.</p>
+        <button id="subscribe-btn"><i class="fas fa-play"></i> Subscribe Now</button>
+    </div>
+
+    <!-- Server Down Message -->
+    <div id="server-down" class="hidden">
+        <!-- Sad Emoji GIF -->
+        <div class="tenor-gif-embed" data-postid="25767814" data-share-method="host" data-aspect-ratio="1.12281" data-width="100%">
+            <a href="https://tenor.com/view/sad-gif-emoji-gif-25767814">Sad Gif Sticker</a>
+            from <a href="https://tenor.com/search/sad-stickers">Sad Stickers</a>
+        </div>
+        <p><strong>FF ID Unban Service</strong><br>We are currently experiencing an High amount of traffic on our servers, causing temporary interruptions in service.<br>Our team is working diligently to resolve the issue as quickly as possible.<br>Please bear with us and try again later. We greatly appreciate your patience and understanding.<br>We sincerely apologize for any inconvenience this may have caused and value your continued support.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
